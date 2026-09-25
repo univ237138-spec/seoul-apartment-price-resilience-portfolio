@@ -1,0 +1,90 @@
+.price-v2 { color:#183e33; margin:36px 0 16px; }
+.price-v2-heading { display:flex; align-items:center; justify-content:space-between; gap:18px; margin:0 3px 34px; }
+.price-v2-heading h2 { color:#183e33; font-size:27px; font-weight:750; line-height:1.4; padding:0; letter-spacing:-.8px; }
+.price-v2-heading p { color:#8a9a94; font-size:14px; margin:10px 0 0; line-height:1.5; }
+.price-v2-grid { display:grid; grid-template-columns:1.12fr 1.12fr .92fr; gap:18px; }
+.price-v2-card { border:1px solid #e4eae3; border-radius:27px; background:#fffffc; padding:25px; box-shadow:0 15px 32px #193f330a; min-width:0; display:flex; flex-direction:column; }
+.price-v2-card h3 { font-size:22px; font-weight:750; color:#183e33; padding:0; line-height:1.4; letter-spacing:-.7px; }
+.price-v2-card p { font-size:14px; color:#8a9a94; line-height:1.6; margin:4px 0 0; }
+.price-v2-top { display:flex; align-items:center; justify-content:space-between; gap:13px; min-height:124px; }
+.price-v2-top > div:first-child { flex:1; }
+.price-v2-ring { width:124px; height:124px; border-radius:50%; padding:17px; background:conic-gradient(var(--ring-color) var(--progress),#e8eeea 0); flex:none; }
+.price-v2-ring > div { width:90px; height:90px; background:#fffffc; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-direction:column; }
+.price-v2-ring strong { font-size:19px; font-weight:800; line-height:1.3; }
+.price-v2-ring span { font-size:12px; color:#8a9a94; font-weight:600; }
+.price-v2-ring span { max-width:78px; text-align:center; line-height:1.25; }
+.price-v2-pair { display:grid; grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr); align-items:center; gap:10px; margin:22px 0; }
+.price-v2-pair > div:last-child { text-align:right; }
+.price-v2-pair > div { min-width:0; }
+.price-v2-pair span,.price-v2-bottom span { display:block; font-size:13px; color:#8a9a94; line-height:1.5; }
+.price-v2-pair strong { display:block; font-size:28px; font-weight:800; letter-spacing:-.9px; line-height:1.4; white-space:nowrap; }
+.price-v2-pair small { display:block; font-size:12px; color:#8a9a94; margin-top:6px; line-height:1.4; }
+.price-v2-pair .price-v2-arrow { font-size:22px; color:#94a99e; text-align:center; }
+.price-v2-bottom { border-top:1px solid #e8ece5; padding-top:16px; margin-top:auto; display:flex; justify-content:space-between; gap:12px; }
+.price-v2-bottom > div { min-width:0; }
+.price-v2-bottom > div:last-child { text-align:right; }
+.price-v2-bottom strong { display:block; font-size:14px; font-weight:700; line-height:1.55; margin-top:2px; overflow-wrap:anywhere; }
+.price-v2-evidence dl { margin:24px 0 0; padding-top:16px; border-top:1px solid #e8ece5; }
+.price-v2-evidence dl > div { display:flex; justify-content:space-between; gap:12px; padding:6px 0; font-size:13px; line-height:1.5; }
+.price-v2-evidence dt { color:#8a9a94; }
+.price-v2-evidence dd { text-align:right; margin:0; font-weight:750; }
+.price-v2-count { margin-top:19px; line-height:1.4; }
+.price-v2-count strong { font-size:36px; font-weight:800; letter-spacing:-1px; }
+.price-v2-count span { color:#8a9a94; font-size:17px; font-weight:600; }
+.price-v2 .price-v2-note { color:#8a9a94; font-size:13px; line-height:1.65; margin:10px 4px 0; }
+.price-v2-note strong { color:#536e60; }
+.price-v2 .price-v2-method { color:#8a9a94; font-size:11px; line-height:1.6; margin:4px 4px 0; }
+.price-v2-method summary { cursor:pointer; padding:8px 0; }
+.price-v2-method summary:focus-visible { outline:2px solid var(--green); }
+.price-v2-method p { margin:0 0 8px; }
+@media(max-width:1200px) and (min-width:801px) {
+  .price-v2-card { padding:20px; }
+  .price-v2-ring { width:100px; height:100px; padding:13px; }
+  .price-v2-ring > div { width:74px; height:74px; }
+  .price-v2-pair strong { font-size:23px; }
+  .price-v2-bottom strong { font-size:12px; }
+}
+@media(max-width:800px) {
+  .price-v2-grid { grid-template-columns:1fr; }
+  .price-v2-heading { margin-bottom:23px; }
+  .price-v2-heading h2 { font-size:23px; }
+  .price-v2-card { padding:25px; }
+}
+@media(max-width:390px) {
+  .price-v2-card { padding:20px; }
+  .price-v2-ring { width:108px; height:108px; padding:14px; }
+  .price-v2-ring > div { width:80px; height:80px; }
+  .price-v2-pair strong { font-size:25px; }
+}
+
+/* ---- 기준 분기가 최신에서 물러났을 때의 안내 ---- */
+.price-v2-stale { margin:-4px 0 14px; padding:9px 13px; background:#fff5ed; border:1px solid #f3d6c3;
+  border-radius:11px; font-size:12px; color:#8a5a33; line-height:1.6; }
+.price-v2-stale b { color:#6d4425; font-weight:750; }
+
+/* ---- 거래가 적은 조합에 나가는 대체 화면 ---- */
+.sparse { background:#fffefa; border:1px solid #e7ebe5; border-radius:24px; padding:25px;
+  box-shadow:0 16px 35px -30px #1e403526; }
+.sparse-heading { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:16px; }
+.sparse-heading h2 { font-size:23px; font-weight:800; letter-spacing:-.8px; margin:0; color:var(--ink); }
+.sparse-heading p { font-size:13px; color:var(--muted); margin:5px 0 0; }
+.sparse-notice { display:flex; gap:14px; align-items:flex-start; background:#fff5ed;
+  border:1px solid #f3d6c3; border-radius:16px; padding:15px 17px; margin-bottom:20px; }
+.sparse-mark { width:32px; height:32px; border-radius:50%; background:#f6e0cd; color:#8a5a33;
+  display:grid; place-items:center; font-weight:800; font-size:16px; flex:none; }
+.sparse-notice h4 { font-size:15px; font-weight:800; margin:0 0 3px; color:var(--ink); }
+.sparse-notice p { font-size:12.5px; color:#8a5a33; margin:0; line-height:1.65; }
+.sparse-notice b { color:#6d4425; font-weight:750; }
+.sparse-sub { font-size:16px; font-weight:800; margin:0 0 2px; color:var(--ink); }
+.sparse-lede { font-size:12.5px; color:var(--muted); margin:0 0 14px; }
+.sparse-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:13px; }
+.sparse-card { border:1px solid var(--line); border-radius:16px; padding:17px; background:#fffefa; }
+.sparse-k { font-size:11.5px; color:var(--muted); margin-bottom:9px; }
+.sparse-v { font-size:26px; font-weight:800; letter-spacing:-1.1px; line-height:1.15; color:var(--ink);
+  font-variant-numeric:tabular-nums; }
+.sparse-v small { font-size:13px; font-weight:700; letter-spacing:0; }
+.sparse-meta { border-top:1px solid var(--line); margin-top:13px; padding-top:11px; }
+.sparse-meta b { font-size:12px; font-weight:750; display:block; color:var(--ink); }
+.sparse-meta span { font-size:10.5px; color:var(--muted); display:block; margin-top:2px; }
+.sparse-note { font-size:11.5px; color:var(--muted); margin:15px 0 0; line-height:1.6; }
+@media (max-width:900px) { .sparse-grid { grid-template-columns:1fr; } }

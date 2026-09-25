@@ -1,0 +1,24 @@
+# 데이터 (용량 문제로 저장소에 포함하지 않음)
+*.csv
+*.csv.gz
+*.parquet
+*.pkl
+!00_기획/샘플데이터/*.csv
+!05_발표자료/추가분석_회복기간_생존분석/*.csv
+!대시보드/tests/fixtures/*.csv
+거래_단지_DATA/
+
+# API 조회 캐시
+*_cache*.json
+_cache/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# 대시보드 테스트 산출물
+대시보드/.qa/
+대시보드/.test_deps/
+*.log
